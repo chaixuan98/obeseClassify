@@ -28,8 +28,6 @@ def predict():
 
         #get prediction
         input_cols = np.array([[Gender, Age, Height, Weight, Family,FAVC,Smoke,CH2O,FAF,CALC]])
-
-        # input_cols = np.array(data, dtype=[('Gender', str), ('Age', int), ('Height', float), ('Weight', float), ('Family', str), ('FAVC', str),('Smoke', str), ('CH2O', int), ('FAF', int), ('CALC', str)])
         print(input_cols)
         prediction = model.predict(input_cols)[0]
         return jsonify({'NObeyesdad':str(prediction)})
