@@ -31,6 +31,6 @@ def predict():
         print(input_cols)
         prediction = model.predict(input_cols)[0]
         return jsonify({'NObeyesdad':str(prediction)})
-        # return render_template("index.html", classification_text='Your predicted obesity level is  {}'.format(prediction))
+        
 if __name__ == "__main__":
     app.run(debug=True)
