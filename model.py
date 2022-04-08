@@ -114,7 +114,7 @@ for name, model in models:
 	# print(msg)
 
 classifier = final
-# classifier.fit(x_train, y_train)
+classifier.fit(x_train, y_train)
 
 # y_pred = classifier.predict(x_test)
 
